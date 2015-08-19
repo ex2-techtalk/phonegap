@@ -1,0 +1,12 @@
+﻿<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <h1 style="color:white;">Items</h1>
+        </div>
+    </div>
+</nav>
+<div class="col-xs-6 col-md-3" ng-repeat="item in images track by $index">
+    <a href="#" ng-click="onClickPhoto(item.src)" class="thumbnail">
+        <img alt="100%x180" id="{{$index}}" src="{{item.src}}" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+    </a>
+</div>
